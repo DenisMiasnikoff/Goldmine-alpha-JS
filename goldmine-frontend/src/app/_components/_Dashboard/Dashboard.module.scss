@@ -1,0 +1,17 @@
+.container {
+  display: grid;
+  grid-template-rows: 6rem 1fr; // Header is 80px
+  height: 100vh;
+  padding: 0;
+  row-gap: 0;
+  gap:0;
+  background-color: var(--color-grey-light-1);
+}
+
+.content {
+  display: flex; // Sidebar and Feed sit side-by-side
+  height: 100%;
+  overflow: hidden; // Critical: only the feed should scroll, not the whole app
+  margin-top: 0;
+  padding-top: 0;
+}
